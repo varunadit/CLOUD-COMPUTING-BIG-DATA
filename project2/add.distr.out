@@ -1,0 +1,871 @@
+myHadoop: Using HADOOP_HOME=/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2
+myHadoop: Using MH_SCRATCH_DIR=/scratch/vdhamudaransathish/job_16878639
+myHadoop: Using JAVA_HOME=/cm/shared/apps/spack/cpu/opt/spack/linux-centos8-zen2/gcc-10.2.0/openjdk-11.0.2-ysua3xn34v6hnko3reiffhlg2r2q7fol
+myHadoop: Generating Hadoop configuration in directory in /home/vdhamudaransathish/expansecluster...
+myHadoop: Backing up old config dir to /home/vdhamudaransathish/expansecluster.10...
+renamed '/home/vdhamudaransathish/expansecluster' -> '/home/vdhamudaransathish/expansecluster.10'
+myHadoop: Designating exp-2-51 as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+exp-2-51
+WARNING: /scratch/vdhamudaransathish/job_16878639/pids does not exist. Creating.
+WARNING: /scratch/vdhamudaransathish/job_16878639/logs does not exist. Creating.
+2022-10-05 01:51:51,717 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = exp-2-51/198.202.103.144
+STARTUP_MSG:   args = [-format, -nonInteractive, -force]
+STARTUP_MSG:   version = 3.2.2
+STARTUP_MSG:   classpath = /home/vdhamudaransathish/expansecluster:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-databind-2.9.10.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsp-api-2.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-identity-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/snappy-java-1.0.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/failureaccess-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/error_prone_annotations-2.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jaxb-api-2.2.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-beanutils-1.9.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-client-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jul-to-slf4j-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-logging-1.1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/hadoop-annotations-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-common-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-simplekdc-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/woodstox-core-5.0.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/metrics-core-3.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/stax2-api-3.1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-security-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/avro-1.7.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/accessors-smart-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-servlet-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-server-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-crypto-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jcip-annotations-1.0-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-io-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-cli-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/re2j-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/j2objc-annotations-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsr305-3.0.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/nimbus-jose-jwt-7.9.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-lang3-3.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/gson-2.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/token-provider-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-server-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-xdr-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jettison-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-asn1-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/hadoop-auth-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-recipes-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-pkix-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-core-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-compress-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-text-1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/httpcore-4.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-server-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/json-smart-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-webapp-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/dnsjava-2.1.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-servlet-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/asm-5.0.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/log4j-1.2.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-xml-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/htrace-core4-4.1.0-incubating.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-admin-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/audience-annotations-0.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-net-3.6.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/javax.servlet-api-3.1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/guava-27.0-jre.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/javax.activation-api-1.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-core-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-math3-3.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-collections-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-util-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-core-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/zookeeper-3.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-client-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/checker-qual-2.5.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-io-2.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-http-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsch-0.1.55.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-codec-1.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/httpclient-4.5.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-configuration2-2.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-config-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-framework-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/netty-3.10.6.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/paranamer-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsr311-api-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/slf4j-api-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-json-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-kms-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-common-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-nfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-identity-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-io-2.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-pkix-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/okio-1.6.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-asn1-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-xdr-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-core-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/gson-2.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/httpclient-4.5.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-configuration2-2.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/re2j-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-text-1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-framework-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-server-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-webapp-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/woodstox-core-5.0.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-servlet-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/accessors-smart-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jcip-annotations-1.0-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/asm-5.0.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/paranamer-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/httpcore-4.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/j2objc-annotations-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/error_prone_annotations-2.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-codec-1.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/okhttp-2.7.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-config-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/json-simple-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/guava-27.0-jre.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/checker-qual-2.5.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/nimbus-jose-jwt-7.9.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jaxb-api-2.2.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/netty-all-4.1.48.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-util-ajax-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-client-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-recipes-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jaxb-impl-2.2.3-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/javax.servlet-api-3.1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-security-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/netty-3.10.6.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-collections-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/avro-1.7.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/stax2-api-3.1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-http-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsr311-api-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-json-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-xc-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-lang3-3.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-math3-3.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-simplekdc-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/animal-sniffer-annotations-1.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/dnsjava-2.1.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-core-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsch-0.1.55.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/hadoop-auth-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-jaxrs-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-compress-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/json-smart-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/failureaccess-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/snappy-java-1.0.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/htrace-core4-4.1.0-incubating.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-server-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-servlet-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-client-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/hadoop-annotations-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-core-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-net-3.6.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-io-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/zookeeper-3.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-util-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-databind-2.9.10.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/javax.activation-api-1.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jettison-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-admin-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/audience-annotations-0.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-common-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-xml-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/token-provider-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsr305-3.0.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-beanutils-1.9.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-crypto-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-server-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-httpfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-client-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-nfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/lib/junit-4.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/java-util-1.9.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-jaxrs-base-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/mssql-jdbc-6.2.1.jre7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/json-io-2.5.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/bcprov-jdk15on-1.60.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/ehcache-3.3.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/fst-2.50.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/guice-4.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/bcpkix-jdk15on-1.60.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/objenesis-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-module-jaxb-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jersey-client-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/snakeyaml-1.16.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-jaxrs-json-provider-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/javax.inject-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jersey-guice-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/geronimo-jcache_1.0_spec-1.0-alpha-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/swagger-annotations-1.5.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/guice-servlet-4.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/metrics-core-3.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/HikariCP-java7-2.4.12.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-services-core-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-router-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-api-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-registry-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-tests-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-services-api-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-submarine-3.2.2.jar
+STARTUP_MSG:   build = Unknown -r 7a3bc90b05f257c8ace2f76d74264906f0f7a932; compiled by 'hexiaoqiao' on 2021-01-03T09:26Z
+STARTUP_MSG:   java = 11.0.2
+************************************************************/
+2022-10-05 01:51:51,724 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2022-10-05 01:51:51,779 INFO namenode.NameNode: createNameNode [-format, -nonInteractive, -force]
+2022-10-05 01:51:52,060 INFO common.Util: Assuming 'file' scheme for path /scratch/vdhamudaransathish/job_16878639/namenode_data in configuration.
+2022-10-05 01:51:52,060 INFO common.Util: Assuming 'file' scheme for path /scratch/vdhamudaransathish/job_16878639/namenode_data in configuration.
+Formatting using clusterid: CID-1ba8200c-c384-48f2-80f3-cf65f9a0b5f8
+2022-10-05 01:51:52,080 INFO namenode.FSEditLog: Edit logging is async:true
+2022-10-05 01:51:52,099 INFO namenode.FSNamesystem: KeyProvider: null
+2022-10-05 01:51:52,099 INFO namenode.FSNamesystem: fsLock is fair: true
+2022-10-05 01:51:52,100 INFO namenode.FSNamesystem: Detailed lock hold time metrics enabled: false
+2022-10-05 01:51:52,133 INFO namenode.FSNamesystem: fsOwner             = vdhamudaransathish (auth:SIMPLE)
+2022-10-05 01:51:52,133 INFO namenode.FSNamesystem: supergroup          = supergroup
+2022-10-05 01:51:52,133 INFO namenode.FSNamesystem: isPermissionEnabled = true
+2022-10-05 01:51:52,133 INFO namenode.FSNamesystem: HA Enabled: false
+2022-10-05 01:51:52,246 INFO common.Util: dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2022-10-05 01:51:52,253 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2022-10-05 01:51:52,253 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2022-10-05 01:51:52,255 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2022-10-05 01:51:52,256 INFO blockmanagement.BlockManager: The block deletion will start around 2022 Oct 05 01:51:52
+2022-10-05 01:51:52,256 INFO util.GSet: Computing capacity for map BlocksMap
+2022-10-05 01:51:52,256 INFO util.GSet: VM type       = 64-bit
+2022-10-05 01:51:52,257 INFO util.GSet: 2.0% max memory 30.0 GB = 613.8 MB
+2022-10-05 01:51:52,257 INFO util.GSet: capacity      = 2^26 = 67108864 entries
+2022-10-05 01:51:52,289 INFO blockmanagement.BlockManager: Storage policy satisfier is disabled
+2022-10-05 01:51:52,290 INFO blockmanagement.BlockManager: dfs.block.access.token.enable = false
+2022-10-05 01:51:52,294 INFO Configuration.deprecation: No unit for dfs.namenode.safemode.extension(30000) assuming MILLISECONDS
+2022-10-05 01:51:52,294 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2022-10-05 01:51:52,294 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.min.datanodes = 0
+2022-10-05 01:51:52,294 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.extension = 30000
+2022-10-05 01:51:52,294 INFO blockmanagement.BlockManager: defaultReplication         = 3
+2022-10-05 01:51:52,294 INFO blockmanagement.BlockManager: maxReplication             = 512
+2022-10-05 01:51:52,294 INFO blockmanagement.BlockManager: minReplication             = 1
+2022-10-05 01:51:52,294 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+2022-10-05 01:51:52,294 INFO blockmanagement.BlockManager: redundancyRecheckInterval  = 3000ms
+2022-10-05 01:51:52,294 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+2022-10-05 01:51:52,294 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2022-10-05 01:51:52,308 INFO namenode.FSDirectory: GLOBAL serial map: bits=29 maxEntries=536870911
+2022-10-05 01:51:52,308 INFO namenode.FSDirectory: USER serial map: bits=24 maxEntries=16777215
+2022-10-05 01:51:52,308 INFO namenode.FSDirectory: GROUP serial map: bits=24 maxEntries=16777215
+2022-10-05 01:51:52,308 INFO namenode.FSDirectory: XATTR serial map: bits=24 maxEntries=16777215
+2022-10-05 01:51:52,315 INFO util.GSet: Computing capacity for map INodeMap
+2022-10-05 01:51:52,315 INFO util.GSet: VM type       = 64-bit
+2022-10-05 01:51:52,315 INFO util.GSet: 1.0% max memory 30.0 GB = 306.9 MB
+2022-10-05 01:51:52,315 INFO util.GSet: capacity      = 2^25 = 33554432 entries
+2022-10-05 01:51:52,329 INFO namenode.FSDirectory: ACLs enabled? false
+2022-10-05 01:51:52,329 INFO namenode.FSDirectory: POSIX ACL inheritance enabled? true
+2022-10-05 01:51:52,329 INFO namenode.FSDirectory: XAttrs enabled? true
+2022-10-05 01:51:52,329 INFO namenode.NameNode: Caching file names occurring more than 10 times
+2022-10-05 01:51:52,334 INFO snapshot.SnapshotManager: Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2022-10-05 01:51:52,335 INFO snapshot.SnapshotManager: SkipList is disabled
+2022-10-05 01:51:52,338 INFO util.GSet: Computing capacity for map cachedBlocks
+2022-10-05 01:51:52,338 INFO util.GSet: VM type       = 64-bit
+2022-10-05 01:51:52,338 INFO util.GSet: 0.25% max memory 30.0 GB = 76.7 MB
+2022-10-05 01:51:52,338 INFO util.GSet: capacity      = 2^23 = 8388608 entries
+2022-10-05 01:51:52,348 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2022-10-05 01:51:52,348 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2022-10-05 01:51:52,348 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2022-10-05 01:51:52,350 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+2022-10-05 01:51:52,351 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2022-10-05 01:51:52,352 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+2022-10-05 01:51:52,352 INFO util.GSet: VM type       = 64-bit
+2022-10-05 01:51:52,352 INFO util.GSet: 0.029999999329447746% max memory 30.0 GB = 9.2 MB
+2022-10-05 01:51:52,352 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+2022-10-05 01:51:52,367 INFO namenode.FSImage: Allocated new BlockPoolId: BP-1392408216-198.202.103.144-1664959912363
+2022-10-05 01:51:52,377 INFO common.Storage: Storage directory /scratch/vdhamudaransathish/job_16878639/namenode_data has been successfully formatted.
+2022-10-05 01:51:52,402 INFO namenode.FSImageFormatProtobuf: Saving image file /scratch/vdhamudaransathish/job_16878639/namenode_data/current/fsimage.ckpt_0000000000000000000 using no compression
+2022-10-05 01:51:52,483 INFO namenode.FSImageFormatProtobuf: Image file /scratch/vdhamudaransathish/job_16878639/namenode_data/current/fsimage.ckpt_0000000000000000000 of size 413 bytes saved in 0 seconds .
+2022-10-05 01:51:52,495 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+2022-10-05 01:51:52,498 INFO namenode.FSImage: FSImageSaver clean checkpoint: txid=0 when meet shutdown.
+2022-10-05 01:51:52,499 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at exp-2-51/198.202.103.144
+************************************************************/
+Starting namenodes on [exp-2-51]
+Starting datanodes
+WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+localhost: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+localhost: It is also possible that a host key has just been changed.
+localhost: The fingerprint for the ED25519 key sent by the remote host is
+localhost: SHA256:Zgf+EQ/+OlFaZQ1DygcP1agV3HAxk5WpuvhAXBkutrs.
+localhost: Please contact your system administrator.
+localhost: Add correct host key in /home/vdhamudaransathish/.ssh/known_hosts to get rid of this message.
+localhost: Offending ED25519 key in /home/vdhamudaransathish/.ssh/known_hosts:1
+localhost: Password authentication is disabled to avoid man-in-the-middle attacks.
+localhost: Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+localhost: WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+Starting secondary namenodes [exp-2-51]
+WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+WARNING: YARN_PID_DIR has been replaced by HADOOP_PID_DIR. Using value of YARN_PID_DIR.
+Starting resourcemanager
+WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+WARNING: YARN_PID_DIR has been replaced by HADOOP_PID_DIR. Using value of YARN_PID_DIR.
+Starting nodemanagers
+WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+WARNING: YARN_PID_DIR has been replaced by HADOOP_PID_DIR. Using value of YARN_PID_DIR.
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+localhost: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+localhost: It is also possible that a host key has just been changed.
+localhost: The fingerprint for the ED25519 key sent by the remote host is
+localhost: SHA256:Zgf+EQ/+OlFaZQ1DygcP1agV3HAxk5WpuvhAXBkutrs.
+localhost: Please contact your system administrator.
+localhost: Add correct host key in /home/vdhamudaransathish/.ssh/known_hosts to get rid of this message.
+localhost: Offending ED25519 key in /home/vdhamudaransathish/.ssh/known_hosts:1
+localhost: Password authentication is disabled to avoid man-in-the-middle attacks.
+localhost: Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+localhost: WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+localhost: WARNING: YARN_PID_DIR has been replaced by HADOOP_PID_DIR. Using value of YARN_PID_DIR.
+2022-10-05 01:52:17,900 INFO client.RMProxy: Connecting to ResourceManager at exp-2-51/198.202.103.144:8032
+2022-10-05 01:52:18,122 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2022-10-05 01:52:18,132 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/vdhamudaransathish/.staging/job_1664959929029_0001
+2022-10-05 01:52:18,304 INFO input.FileInputFormat: Total input files to process : 1
+2022-10-05 01:52:18,353 INFO mapreduce.JobSubmitter: number of splits:2
+2022-10-05 01:52:18,491 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1664959929029_0001
+2022-10-05 01:52:18,492 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-10-05 01:52:18,615 INFO conf.Configuration: resource-types.xml not found
+2022-10-05 01:52:18,615 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-10-05 01:52:18,937 INFO impl.YarnClientImpl: Submitted application application_1664959929029_0001
+2022-10-05 01:52:18,958 INFO mapreduce.Job: The url to track the job: http://exp-2-51:8088/proxy/application_1664959929029_0001/
+2022-10-05 01:52:18,959 INFO mapreduce.Job: Running job: job_1664959929029_0001
+2022-10-05 01:52:25,015 INFO mapreduce.Job: Job job_1664959929029_0001 running in uber mode : false
+2022-10-05 01:52:25,016 INFO mapreduce.Job:  map 0% reduce 0%
+2022-10-05 01:52:40,059 INFO mapreduce.Job:  map 2% reduce 0%
+2022-10-05 01:52:46,072 INFO mapreduce.Job:  map 3% reduce 0%
+2022-10-05 01:52:52,083 INFO mapreduce.Job:  map 4% reduce 0%
+2022-10-05 01:52:53,085 INFO mapreduce.Job:  map 5% reduce 0%
+2022-10-05 01:52:59,097 INFO mapreduce.Job:  map 6% reduce 0%
+2022-10-05 01:53:05,108 INFO mapreduce.Job:  map 7% reduce 0%
+2022-10-05 01:53:11,118 INFO mapreduce.Job:  map 8% reduce 0%
+2022-10-05 01:53:17,128 INFO mapreduce.Job:  map 9% reduce 0%
+2022-10-05 01:53:23,138 INFO mapreduce.Job:  map 11% reduce 0%
+2022-10-05 01:53:29,149 INFO mapreduce.Job:  map 12% reduce 0%
+2022-10-05 01:53:35,157 INFO mapreduce.Job:  map 13% reduce 0%
+2022-10-05 01:53:41,166 INFO mapreduce.Job:  map 14% reduce 0%
+2022-10-05 01:53:47,175 INFO mapreduce.Job:  map 15% reduce 0%
+2022-10-05 01:53:53,183 INFO mapreduce.Job:  map 17% reduce 0%
+2022-10-05 01:53:59,029 INFO mapreduce.Job:  map 18% reduce 0%
+2022-10-05 01:54:05,038 INFO mapreduce.Job:  map 19% reduce 0%
+2022-10-05 01:54:11,045 INFO mapreduce.Job:  map 20% reduce 0%
+2022-10-05 01:54:17,053 INFO mapreduce.Job:  map 21% reduce 0%
+2022-10-05 01:54:23,061 INFO mapreduce.Job:  map 23% reduce 0%
+2022-10-05 01:54:29,068 INFO mapreduce.Job:  map 24% reduce 0%
+2022-10-05 01:54:35,075 INFO mapreduce.Job:  map 25% reduce 0%
+2022-10-05 01:54:42,084 INFO mapreduce.Job:  map 26% reduce 0%
+2022-10-05 01:54:48,091 INFO mapreduce.Job:  map 27% reduce 0%
+2022-10-05 01:54:54,096 INFO mapreduce.Job:  map 28% reduce 0%
+2022-10-05 01:55:00,103 INFO mapreduce.Job:  map 30% reduce 0%
+2022-10-05 01:55:06,110 INFO mapreduce.Job:  map 31% reduce 0%
+2022-10-05 01:55:12,115 INFO mapreduce.Job:  map 32% reduce 0%
+2022-10-05 01:55:18,121 INFO mapreduce.Job:  map 33% reduce 0%
+2022-10-05 01:55:24,127 INFO mapreduce.Job:  map 34% reduce 0%
+2022-10-05 01:55:30,133 INFO mapreduce.Job:  map 36% reduce 0%
+2022-10-05 01:55:36,139 INFO mapreduce.Job:  map 37% reduce 0%
+2022-10-05 01:55:42,145 INFO mapreduce.Job:  map 38% reduce 0%
+2022-10-05 01:55:48,151 INFO mapreduce.Job:  map 39% reduce 0%
+2022-10-05 01:55:54,155 INFO mapreduce.Job:  map 41% reduce 0%
+2022-10-05 01:56:00,160 INFO mapreduce.Job:  map 42% reduce 0%
+2022-10-05 01:56:06,138 INFO mapreduce.Job:  map 43% reduce 0%
+2022-10-05 01:56:12,143 INFO mapreduce.Job:  map 44% reduce 0%
+2022-10-05 01:56:18,148 INFO mapreduce.Job:  map 45% reduce 0%
+2022-10-05 01:56:24,153 INFO mapreduce.Job:  map 47% reduce 0%
+2022-10-05 01:56:30,159 INFO mapreduce.Job:  map 48% reduce 0%
+2022-10-05 01:56:37,164 INFO mapreduce.Job:  map 49% reduce 0%
+2022-10-05 01:56:40,173 INFO mapreduce.Job:  map 66% reduce 0%
+2022-10-05 01:56:55,186 INFO mapreduce.Job:  map 67% reduce 0%
+2022-10-05 01:56:56,187 INFO mapreduce.Job:  map 67% reduce 17%
+2022-10-05 01:57:07,197 INFO mapreduce.Job:  map 68% reduce 17%
+2022-10-05 01:57:25,211 INFO mapreduce.Job:  map 69% reduce 17%
+2022-10-05 01:57:43,226 INFO mapreduce.Job:  map 70% reduce 17%
+2022-10-05 01:57:55,236 INFO mapreduce.Job:  map 71% reduce 17%
+2022-10-05 01:58:13,250 INFO mapreduce.Job:  map 72% reduce 17%
+2022-10-05 01:58:31,264 INFO mapreduce.Job:  map 73% reduce 17%
+2022-10-05 01:58:43,274 INFO mapreduce.Job:  map 74% reduce 17%
+2022-10-05 01:59:02,288 INFO mapreduce.Job:  map 75% reduce 17%
+2022-10-05 01:59:14,297 INFO mapreduce.Job:  map 76% reduce 17%
+2022-10-05 01:59:32,310 INFO mapreduce.Job:  map 77% reduce 17%
+2022-10-05 01:59:50,323 INFO mapreduce.Job:  map 78% reduce 17%
+2022-10-05 02:00:02,333 INFO mapreduce.Job:  map 79% reduce 17%
+2022-10-05 02:00:20,346 INFO mapreduce.Job:  map 80% reduce 17%
+2022-10-05 02:00:32,355 INFO mapreduce.Job:  map 81% reduce 17%
+2022-10-05 02:00:50,367 INFO mapreduce.Job:  map 82% reduce 17%
+2022-10-05 02:01:09,382 INFO mapreduce.Job:  map 83% reduce 17%
+2022-10-05 02:01:21,393 INFO mapreduce.Job:  map 94% reduce 17%
+2022-10-05 02:01:22,395 INFO mapreduce.Job:  map 100% reduce 17%
+2022-10-05 02:01:29,404 INFO mapreduce.Job:  map 100% reduce 95%
+2022-10-05 02:01:31,406 INFO mapreduce.Job:  map 100% reduce 100%
+2022-10-05 02:01:31,408 INFO mapreduce.Job: Job job_1664959929029_0001 completed successfully
+2022-10-05 02:01:31,467 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=624000048
+		FILE: Number of bytes written=936705830
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=195034411
+		HDFS: Number of bytes written=96031217
+		HDFS: Number of read operations=11
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=3
+		Launched reduce tasks=1
+		Data-local map tasks=3
+		Total time spent by all maps in occupied slots (ms)=1069196
+		Total time spent by all reduces in occupied slots (ms)=287718
+		Total time spent by all map tasks (ms)=1069196
+		Total time spent by all reduce tasks (ms)=287718
+		Total vcore-milliseconds taken by all map tasks=1069196
+		Total vcore-milliseconds taken by all reduce tasks=287718
+		Total megabyte-milliseconds taken by all map tasks=1094856704
+		Total megabyte-milliseconds taken by all reduce tasks=294623232
+	Map-Reduce Framework
+		Map input records=12000000
+		Map output records=12000000
+		Map output bytes=288000000
+		Map output materialized bytes=312000012
+		Input split bytes=258
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1200
+		Reduce shuffle bytes=312000012
+		Reduce input records=12000000
+		Reduce output records=1200
+		Spilled Records=36000000
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=4253
+		CPU time spent (ms)=842830
+		Physical memory (bytes) snapshot=2440937472
+		Virtual memory (bytes) snapshot=8979787776
+		Total committed heap usage (bytes)=2579496960
+		Peak Map Physical memory (bytes)=809709568
+		Peak Map Virtual memory (bytes)=2991292416
+		Peak Reduce Physical memory (bytes)=824500224
+		Peak Reduce Virtual memory (bytes)=2998472704
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=195034153
+	File Output Format Counters 
+		Bytes Written=96031217
+2022-10-05 02:01:31,499 INFO client.RMProxy: Connecting to ResourceManager at exp-2-51/198.202.103.144:8032
+2022-10-05 02:01:31,509 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2022-10-05 02:01:31,511 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/vdhamudaransathish/.staging/job_1664959929029_0002
+2022-10-05 02:01:31,927 INFO input.FileInputFormat: Total input files to process : 1
+2022-10-05 02:01:31,949 INFO mapreduce.JobSubmitter: number of splits:2
+2022-10-05 02:01:31,974 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1664959929029_0002
+2022-10-05 02:01:31,974 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-10-05 02:01:32,014 INFO impl.YarnClientImpl: Submitted application application_1664959929029_0002
+2022-10-05 02:01:32,027 INFO mapreduce.Job: The url to track the job: http://exp-2-51:8088/proxy/application_1664959929029_0002/
+2022-10-05 02:01:32,027 INFO mapreduce.Job: Running job: job_1664959929029_0002
+2022-10-05 02:01:42,087 INFO mapreduce.Job: Job job_1664959929029_0002 running in uber mode : false
+2022-10-05 02:01:42,087 INFO mapreduce.Job:  map 0% reduce 0%
+2022-10-05 02:01:57,119 INFO mapreduce.Job:  map 2% reduce 0%
+2022-10-05 02:02:03,129 INFO mapreduce.Job:  map 4% reduce 0%
+2022-10-05 02:02:09,140 INFO mapreduce.Job:  map 5% reduce 0%
+2022-10-05 02:02:15,149 INFO mapreduce.Job:  map 6% reduce 0%
+2022-10-05 02:02:21,158 INFO mapreduce.Job:  map 7% reduce 0%
+2022-10-05 02:02:27,167 INFO mapreduce.Job:  map 9% reduce 0%
+2022-10-05 02:02:33,175 INFO mapreduce.Job:  map 10% reduce 0%
+2022-10-05 02:02:39,183 INFO mapreduce.Job:  map 11% reduce 0%
+2022-10-05 02:02:46,192 INFO mapreduce.Job:  map 12% reduce 0%
+2022-10-05 02:02:52,199 INFO mapreduce.Job:  map 14% reduce 0%
+2022-10-05 02:02:58,208 INFO mapreduce.Job:  map 15% reduce 0%
+2022-10-05 02:03:04,215 INFO mapreduce.Job:  map 16% reduce 0%
+2022-10-05 02:03:10,222 INFO mapreduce.Job:  map 17% reduce 0%
+2022-10-05 02:03:16,229 INFO mapreduce.Job:  map 19% reduce 0%
+2022-10-05 02:03:22,236 INFO mapreduce.Job:  map 20% reduce 0%
+2022-10-05 02:03:28,243 INFO mapreduce.Job:  map 21% reduce 0%
+2022-10-05 02:03:34,250 INFO mapreduce.Job:  map 22% reduce 0%
+2022-10-05 02:03:40,258 INFO mapreduce.Job:  map 24% reduce 0%
+2022-10-05 02:03:46,265 INFO mapreduce.Job:  map 25% reduce 0%
+2022-10-05 02:03:52,272 INFO mapreduce.Job:  map 26% reduce 0%
+2022-10-05 02:03:58,279 INFO mapreduce.Job:  map 27% reduce 0%
+2022-10-05 02:04:04,286 INFO mapreduce.Job:  map 29% reduce 0%
+2022-10-05 02:04:10,293 INFO mapreduce.Job:  map 30% reduce 0%
+2022-10-05 02:04:16,299 INFO mapreduce.Job:  map 31% reduce 0%
+2022-10-05 02:04:22,306 INFO mapreduce.Job:  map 32% reduce 0%
+2022-10-05 02:04:28,312 INFO mapreduce.Job:  map 34% reduce 0%
+2022-10-05 02:04:34,975 INFO mapreduce.Job:  map 35% reduce 0%
+2022-10-05 02:04:40,981 INFO mapreduce.Job:  map 36% reduce 0%
+2022-10-05 02:04:46,987 INFO mapreduce.Job:  map 37% reduce 0%
+2022-10-05 02:04:52,993 INFO mapreduce.Job:  map 38% reduce 0%
+2022-10-05 02:04:59,000 INFO mapreduce.Job:  map 40% reduce 0%
+2022-10-05 02:05:05,006 INFO mapreduce.Job:  map 41% reduce 0%
+2022-10-05 02:05:11,012 INFO mapreduce.Job:  map 42% reduce 0%
+2022-10-05 02:05:17,018 INFO mapreduce.Job:  map 43% reduce 0%
+2022-10-05 02:05:23,024 INFO mapreduce.Job:  map 45% reduce 0%
+2022-10-05 02:05:29,030 INFO mapreduce.Job:  map 46% reduce 0%
+2022-10-05 02:05:35,036 INFO mapreduce.Job:  map 47% reduce 0%
+2022-10-05 02:05:41,043 INFO mapreduce.Job:  map 48% reduce 0%
+2022-10-05 02:05:44,047 INFO mapreduce.Job:  map 65% reduce 0%
+2022-10-05 02:05:53,057 INFO mapreduce.Job:  map 66% reduce 0%
+2022-10-05 02:06:00,064 INFO mapreduce.Job:  map 66% reduce 17%
+2022-10-05 02:06:12,075 INFO mapreduce.Job:  map 67% reduce 17%
+2022-10-05 02:06:24,086 INFO mapreduce.Job:  map 68% reduce 17%
+2022-10-05 02:06:42,103 INFO mapreduce.Job:  map 69% reduce 17%
+2022-10-05 02:06:54,114 INFO mapreduce.Job:  map 70% reduce 17%
+2022-10-05 02:07:12,129 INFO mapreduce.Job:  map 71% reduce 17%
+2022-10-05 02:07:30,144 INFO mapreduce.Job:  map 72% reduce 17%
+2022-10-05 02:07:42,153 INFO mapreduce.Job:  map 73% reduce 17%
+2022-10-05 02:08:00,167 INFO mapreduce.Job:  map 74% reduce 17%
+2022-10-05 02:08:13,177 INFO mapreduce.Job:  map 75% reduce 17%
+2022-10-05 02:08:31,192 INFO mapreduce.Job:  map 76% reduce 17%
+2022-10-05 02:08:49,205 INFO mapreduce.Job:  map 77% reduce 17%
+2022-10-05 02:09:01,215 INFO mapreduce.Job:  map 78% reduce 17%
+2022-10-05 02:09:19,229 INFO mapreduce.Job:  map 79% reduce 17%
+2022-10-05 02:09:31,238 INFO mapreduce.Job:  map 80% reduce 17%
+2022-10-05 02:09:49,251 INFO mapreduce.Job:  map 81% reduce 17%
+2022-10-05 02:10:07,265 INFO mapreduce.Job:  map 82% reduce 17%
+2022-10-05 02:10:20,275 INFO mapreduce.Job:  map 83% reduce 17%
+2022-10-05 02:10:37,288 INFO mapreduce.Job:  map 100% reduce 17%
+2022-10-05 02:10:38,289 INFO mapreduce.Job:  map 100% reduce 67%
+2022-10-05 02:10:45,295 INFO mapreduce.Job:  map 100% reduce 100%
+2022-10-05 02:10:46,297 INFO mapreduce.Job: Job job_1664959929029_0002 completed successfully
+2022-10-05 02:10:46,315 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=624000048
+		FILE: Number of bytes written=936705833
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=195033869
+		HDFS: Number of bytes written=96031217
+		HDFS: Number of read operations=11
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=3
+		Launched reduce tasks=1
+		Data-local map tasks=3
+		Total time spent by all maps in occupied slots (ms)=1065435
+		Total time spent by all reduces in occupied slots (ms)=298825
+		Total time spent by all map tasks (ms)=1065435
+		Total time spent by all reduce tasks (ms)=298825
+		Total vcore-milliseconds taken by all map tasks=1065435
+		Total vcore-milliseconds taken by all reduce tasks=298825
+		Total megabyte-milliseconds taken by all map tasks=1091005440
+		Total megabyte-milliseconds taken by all reduce tasks=305996800
+	Map-Reduce Framework
+		Map input records=12000000
+		Map output records=12000000
+		Map output bytes=288000000
+		Map output materialized bytes=312000012
+		Input split bytes=258
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1200
+		Reduce shuffle bytes=312000012
+		Reduce input records=12000000
+		Reduce output records=1200
+		Spilled Records=36000000
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=3858
+		CPU time spent (ms)=826530
+		Physical memory (bytes) snapshot=2466615296
+		Virtual memory (bytes) snapshot=8980545536
+		Total committed heap usage (bytes)=2579496960
+		Peak Map Physical memory (bytes)=816185344
+		Peak Map Virtual memory (bytes)=2992152576
+		Peak Reduce Physical memory (bytes)=843755520
+		Peak Reduce Virtual memory (bytes)=2998067200
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=195033611
+	File Output Format Counters 
+		Bytes Written=96031217
+2022-10-05 02:10:46,340 INFO client.RMProxy: Connecting to ResourceManager at exp-2-51/198.202.103.144:8032
+2022-10-05 02:10:46,347 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2022-10-05 02:10:46,348 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/vdhamudaransathish/.staging/job_1664959929029_0003
+2022-10-05 02:10:46,378 INFO input.FileInputFormat: Total input files to process : 1
+2022-10-05 02:10:46,381 INFO input.FileInputFormat: Total input files to process : 1
+2022-10-05 02:10:46,397 INFO mapreduce.JobSubmitter: number of splits:2
+2022-10-05 02:10:46,409 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1664959929029_0003
+2022-10-05 02:10:46,409 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-10-05 02:10:46,424 INFO impl.YarnClientImpl: Submitted application application_1664959929029_0003
+2022-10-05 02:10:46,427 INFO mapreduce.Job: The url to track the job: http://exp-2-51:8088/proxy/application_1664959929029_0003/
+2022-10-05 02:10:46,427 INFO mapreduce.Job: Running job: job_1664959929029_0003
+2022-10-05 02:10:55,483 INFO mapreduce.Job: Job job_1664959929029_0003 running in uber mode : false
+2022-10-05 02:10:55,484 INFO mapreduce.Job:  map 0% reduce 0%
+2022-10-05 02:11:00,532 INFO mapreduce.Job:  map 100% reduce 0%
+2022-10-05 02:11:16,555 INFO mapreduce.Job:  map 100% reduce 74%
+2022-10-05 02:11:22,563 INFO mapreduce.Job:  map 100% reduce 78%
+2022-10-05 02:11:28,570 INFO mapreduce.Job:  map 100% reduce 83%
+2022-10-05 02:11:34,577 INFO mapreduce.Job:  map 100% reduce 87%
+2022-10-05 02:11:40,585 INFO mapreduce.Job:  map 100% reduce 91%
+2022-10-05 02:11:46,592 INFO mapreduce.Job:  map 100% reduce 95%
+2022-10-05 02:11:52,599 INFO mapreduce.Job:  map 100% reduce 99%
+2022-10-05 02:11:54,601 INFO mapreduce.Job:  map 100% reduce 100%
+2022-10-05 02:11:55,604 INFO mapreduce.Job: Job job_1664959929029_0003 completed successfully
+2022-10-05 02:11:55,621 INFO mapreduce.Job: Counters: 54
+	File System Counters
+		FILE: Number of bytes read=384062430
+		FILE: Number of bytes written=576800234
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=192062976
+		HDFS: Number of bytes written=90071847
+		HDFS: Number of read operations=13
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Launched map tasks=2
+		Launched reduce tasks=1
+		Data-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=4365
+		Total time spent by all reduces in occupied slots (ms)=51431
+		Total time spent by all map tasks (ms)=4365
+		Total time spent by all reduce tasks (ms)=51431
+		Total vcore-milliseconds taken by all map tasks=4365
+		Total vcore-milliseconds taken by all reduce tasks=51431
+		Total megabyte-milliseconds taken by all map tasks=4469760
+		Total megabyte-milliseconds taken by all reduce tasks=52665344
+	Map-Reduce Framework
+		Map input records=2400
+		Map output records=2400
+		Map output bytes=192019200
+		Map output materialized bytes=192031212
+		Input split bytes=542
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1200
+		Reduce shuffle bytes=192031212
+		Reduce input records=2400
+		Reduce output records=1200
+		Spilled Records=7200
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=880
+		CPU time spent (ms)=62190
+		Physical memory (bytes) snapshot=1730650112
+		Virtual memory (bytes) snapshot=8965091328
+		Total committed heap usage (bytes)=2579496960
+		Peak Map Physical memory (bytes)=417017856
+		Peak Map Virtual memory (bytes)=2984656896
+		Peak Reduce Physical memory (bytes)=917262336
+		Peak Reduce Virtual memory (bytes)=2996310016
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=90071847
+WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+WARNING: YARN_PID_DIR has been replaced by HADOOP_PID_DIR. Using value of YARN_PID_DIR.
+Stopping nodemanagers
+WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+WARNING: YARN_PID_DIR has been replaced by HADOOP_PID_DIR. Using value of YARN_PID_DIR.
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+localhost: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+localhost: It is also possible that a host key has just been changed.
+localhost: The fingerprint for the ED25519 key sent by the remote host is
+localhost: SHA256:Zgf+EQ/+OlFaZQ1DygcP1agV3HAxk5WpuvhAXBkutrs.
+localhost: Please contact your system administrator.
+localhost: Add correct host key in /home/vdhamudaransathish/.ssh/known_hosts to get rid of this message.
+localhost: Offending ED25519 key in /home/vdhamudaransathish/.ssh/known_hosts:1
+localhost: Password authentication is disabled to avoid man-in-the-middle attacks.
+localhost: Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+localhost: WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+localhost: WARNING: YARN_PID_DIR has been replaced by HADOOP_PID_DIR. Using value of YARN_PID_DIR.
+localhost: WARNING: nodemanager did not stop gracefully after 5 seconds: Trying to kill with kill -9
+Stopping resourcemanager
+WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+WARNING: YARN_PID_DIR has been replaced by HADOOP_PID_DIR. Using value of YARN_PID_DIR.
+Stopping namenodes on [exp-2-51]
+Stopping datanodes
+WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+localhost: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+localhost: It is also possible that a host key has just been changed.
+localhost: The fingerprint for the ED25519 key sent by the remote host is
+localhost: SHA256:Zgf+EQ/+OlFaZQ1DygcP1agV3HAxk5WpuvhAXBkutrs.
+localhost: Please contact your system administrator.
+localhost: Add correct host key in /home/vdhamudaransathish/.ssh/known_hosts to get rid of this message.
+localhost: Offending ED25519 key in /home/vdhamudaransathish/.ssh/known_hosts:1
+localhost: Password authentication is disabled to avoid man-in-the-middle attacks.
+localhost: Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+localhost: WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+Stopping secondary namenodes [exp-2-51]
+Copying Hadoop logs back to /home/vdhamudaransathish/expansecluster/logs...
+'/scratch/vdhamudaransathish/job_16878639/logs' -> '/home/vdhamudaransathish/expansecluster/logs'
+'/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-namenode-exp-2-51.out' -> '/home/vdhamudaransathish/expansecluster/logs/hadoop-vdhamudaransathish-namenode-exp-2-51.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/SecurityAuth-vdhamudaransathish.audit' -> '/home/vdhamudaransathish/expansecluster/logs/SecurityAuth-vdhamudaransathish.audit'
+'/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-datanode-exp-2-51.out' -> '/home/vdhamudaransathish/expansecluster/logs/hadoop-vdhamudaransathish-datanode-exp-2-51.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-namenode-exp-2-51.log' -> '/home/vdhamudaransathish/expansecluster/logs/hadoop-vdhamudaransathish-namenode-exp-2-51.log'
+'/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-datanode-exp-2-51.log' -> '/home/vdhamudaransathish/expansecluster/logs/hadoop-vdhamudaransathish-datanode-exp-2-51.log'
+'/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-secondarynamenode-exp-2-51.out' -> '/home/vdhamudaransathish/expansecluster/logs/hadoop-vdhamudaransathish-secondarynamenode-exp-2-51.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-secondarynamenode-exp-2-51.log' -> '/home/vdhamudaransathish/expansecluster/logs/hadoop-vdhamudaransathish-secondarynamenode-exp-2-51.log'
+'/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-resourcemanager-exp-2-51.out' -> '/home/vdhamudaransathish/expansecluster/logs/hadoop-vdhamudaransathish-resourcemanager-exp-2-51.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-resourcemanager-exp-2-51.log' -> '/home/vdhamudaransathish/expansecluster/logs/hadoop-vdhamudaransathish-resourcemanager-exp-2-51.log'
+'/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-nodemanager-exp-2-51.out' -> '/home/vdhamudaransathish/expansecluster/logs/hadoop-vdhamudaransathish-nodemanager-exp-2-51.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-nodemanager-exp-2-51.log' -> '/home/vdhamudaransathish/expansecluster/logs/hadoop-vdhamudaransathish-nodemanager-exp-2-51.log'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/prelaunch.out' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/prelaunch.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/prelaunch.err' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/prelaunch.err'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/launch_container.sh' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/launch_container.sh'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/directory.info' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/directory.info'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/stdout' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/stdout'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/stderr' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/stderr'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/syslog' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/syslog'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/prelaunch.out' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/prelaunch.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/prelaunch.err' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/prelaunch.err'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/launch_container.sh' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/launch_container.sh'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/directory.info' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/directory.info'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/stdout' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/stdout'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/stderr' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/stderr'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/syslog' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/syslog'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/prelaunch.out' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/prelaunch.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/prelaunch.err' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/prelaunch.err'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/launch_container.sh' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/launch_container.sh'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/directory.info' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/directory.info'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/stdout' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/stdout'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/stderr' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/stderr'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/syslog' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/syslog'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/prelaunch.out' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/prelaunch.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/prelaunch.err' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/prelaunch.err'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/launch_container.sh' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/launch_container.sh'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/directory.info' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/directory.info'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/stdout' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/stdout'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/stderr' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/stderr'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/syslog' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/syslog'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/prelaunch.out' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/prelaunch.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/prelaunch.err' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/prelaunch.err'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/launch_container.sh' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/launch_container.sh'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/directory.info' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/directory.info'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/stdout' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/stdout'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/stderr' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/stderr'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/syslog' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/syslog'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/syslog.shuffle' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/syslog.shuffle'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/prelaunch.out' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/prelaunch.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/prelaunch.err' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/prelaunch.err'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/launch_container.sh' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/launch_container.sh'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/directory.info' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/directory.info'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/stdout' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/stdout'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/stderr' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/stderr'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/syslog' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/syslog'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/prelaunch.out' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/prelaunch.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/prelaunch.err' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/prelaunch.err'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/launch_container.sh' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/launch_container.sh'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/directory.info' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/directory.info'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/stdout' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/stdout'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/stderr' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/stderr'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/syslog' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/syslog'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/syslog.shuffle' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/syslog.shuffle'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/prelaunch.out' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/prelaunch.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/prelaunch.err' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/prelaunch.err'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/launch_container.sh' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/launch_container.sh'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/directory.info' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/directory.info'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/stdout' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/stdout'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/stderr' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/stderr'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/syslog' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/syslog'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/prelaunch.out' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/prelaunch.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/prelaunch.err' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/prelaunch.err'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/launch_container.sh' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/launch_container.sh'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/directory.info' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/directory.info'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/stdout' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/stdout'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/stderr' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/stderr'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/syslog' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/syslog'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/prelaunch.out' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/prelaunch.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/prelaunch.err' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/prelaunch.err'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/launch_container.sh' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/launch_container.sh'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/directory.info' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/directory.info'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/stdout' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/stdout'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/stderr' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/stderr'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/syslog' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/syslog'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/prelaunch.out' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/prelaunch.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/prelaunch.err' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/prelaunch.err'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/launch_container.sh' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/launch_container.sh'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/directory.info' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/directory.info'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/stdout' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/stdout'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/stderr' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/stderr'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/syslog' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/syslog'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/prelaunch.out' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/prelaunch.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/prelaunch.err' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/prelaunch.err'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/launch_container.sh' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/launch_container.sh'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/directory.info' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/directory.info'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/stdout' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/stdout'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/stderr' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/stderr'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/syslog' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/syslog'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/prelaunch.out' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/prelaunch.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/prelaunch.err' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/prelaunch.err'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/launch_container.sh' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/launch_container.sh'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/directory.info' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/directory.info'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/stdout' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/stdout'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/stderr' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/stderr'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/syslog' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/syslog'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/prelaunch.out' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/prelaunch.out'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/prelaunch.err' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/prelaunch.err'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/launch_container.sh' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/launch_container.sh'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/directory.info' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/directory.info'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/stdout' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/stdout'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/stderr' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/stderr'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/syslog' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/syslog'
+'/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/syslog.shuffle' -> '/home/vdhamudaransathish/expansecluster/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/syslog.shuffle'
+removed '/scratch/vdhamudaransathish/job_16878639/tmp/dfs/namesecondary/current/fsimage_0000000000000000000'
+removed '/scratch/vdhamudaransathish/job_16878639/tmp/dfs/namesecondary/current/VERSION'
+removed '/scratch/vdhamudaransathish/job_16878639/tmp/dfs/namesecondary/current/fsimage_0000000000000000000.md5'
+removed '/scratch/vdhamudaransathish/job_16878639/tmp/dfs/namesecondary/current/fsimage_0000000000000000070.md5'
+removed '/scratch/vdhamudaransathish/job_16878639/tmp/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000070'
+removed '/scratch/vdhamudaransathish/job_16878639/tmp/dfs/namesecondary/current/fsimage_0000000000000000070'
+removed directory '/scratch/vdhamudaransathish/job_16878639/tmp/dfs/namesecondary/current'
+removed directory '/scratch/vdhamudaransathish/job_16878639/tmp/dfs/namesecondary'
+removed directory '/scratch/vdhamudaransathish/job_16878639/tmp/dfs'
+removed directory '/scratch/vdhamudaransathish/job_16878639/tmp'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/VERSION'
+removed directory '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/tmp'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/scanner.cursor'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741858'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741848_1024.meta'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741836'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741846'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741826'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741838_1014.meta'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741828_1004.meta'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741845'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741828'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741856_1032.meta'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741857'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741847'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741835_1011.meta'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741827'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741825'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741858_1034.meta'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741855'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741848'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741845_1021.meta'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741857_1033.meta'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741847_1023.meta'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741837_1013.meta'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741836_1012.meta'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741827_1003.meta'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741837'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741835'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741838'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741846_1022.meta'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741856'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0/blk_1073741855_1031.meta'
+removed directory '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0/subdir0'
+removed directory '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized/subdir0'
+removed directory '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/finalized'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/VERSION'
+removed directory '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/rbw'
+removed '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current/dfsUsed'
+removed directory '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363/current'
+removed directory '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current/BP-1392408216-198.202.103.144-1664959912363'
+removed directory '/scratch/vdhamudaransathish/job_16878639/hdfs_data/current'
+removed directory '/scratch/vdhamudaransathish/job_16878639/hdfs_data'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/launch_container.sh'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/prelaunch.err'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/syslog'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/stderr'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/stdout'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/prelaunch.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002/directory.info'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000002'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/syslog.shuffle'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/launch_container.sh'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/prelaunch.err'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/syslog'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/stderr'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/stdout'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/prelaunch.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005/directory.info'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000005'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/launch_container.sh'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/prelaunch.err'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/syslog'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/stderr'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/stdout'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/prelaunch.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001/directory.info'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000001'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/launch_container.sh'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/prelaunch.err'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/syslog'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/stderr'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/stdout'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/prelaunch.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004/directory.info'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000004'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/launch_container.sh'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/prelaunch.err'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/syslog'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/stderr'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/stdout'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/prelaunch.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003/directory.info'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002/container_1664959929029_0002_01_000003'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0002'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/launch_container.sh'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/prelaunch.err'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/syslog'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/stderr'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/stdout'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/prelaunch.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003/directory.info'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000003'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/syslog.shuffle'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/launch_container.sh'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/prelaunch.err'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/syslog'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/stderr'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/stdout'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/prelaunch.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004/directory.info'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000004'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/launch_container.sh'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/prelaunch.err'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/syslog'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/stderr'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/stdout'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/prelaunch.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002/directory.info'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000002'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/launch_container.sh'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/prelaunch.err'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/syslog'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/stderr'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/stdout'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/prelaunch.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001/directory.info'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003/container_1664959929029_0003_01_000001'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0003'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/syslog.shuffle'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/launch_container.sh'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/prelaunch.err'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/syslog'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/stderr'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/stdout'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/prelaunch.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005/directory.info'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000005'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/launch_container.sh'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/prelaunch.err'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/syslog'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/stderr'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/stdout'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/prelaunch.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004/directory.info'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000004'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/launch_container.sh'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/prelaunch.err'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/syslog'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/stderr'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/stdout'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/prelaunch.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003/directory.info'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000003'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/launch_container.sh'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/prelaunch.err'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/syslog'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/stderr'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/stdout'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/prelaunch.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001/directory.info'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000001'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/launch_container.sh'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/prelaunch.err'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/syslog'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/stderr'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/stdout'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/prelaunch.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002/directory.info'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001/container_1664959929029_0001_01_000002'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs/application_1664959929029_0001'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs/userlogs'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-resourcemanager-exp-2-51.log'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-nodemanager-exp-2-51.log'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/SecurityAuth-vdhamudaransathish.audit'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-resourcemanager-exp-2-51.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-secondarynamenode-exp-2-51.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-namenode-exp-2-51.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-secondarynamenode-exp-2-51.log'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-namenode-exp-2-51.log'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-datanode-exp-2-51.out'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-datanode-exp-2-51.log'
+removed '/scratch/vdhamudaransathish/job_16878639/logs/hadoop-vdhamudaransathish-nodemanager-exp-2-51.out'
+removed directory '/scratch/vdhamudaransathish/job_16878639/logs'
+removed directory '/scratch/vdhamudaransathish/job_16878639/mapred_scratch/filecache'
+removed directory '/scratch/vdhamudaransathish/job_16878639/mapred_scratch/nmPrivate'
+removed directory '/scratch/vdhamudaransathish/job_16878639/mapred_scratch/usercache/vdhamudaransathish/filecache'
+removed directory '/scratch/vdhamudaransathish/job_16878639/mapred_scratch/usercache/vdhamudaransathish/appcache'
+removed directory '/scratch/vdhamudaransathish/job_16878639/mapred_scratch/usercache/vdhamudaransathish'
+removed directory '/scratch/vdhamudaransathish/job_16878639/mapred_scratch/usercache'
+removed directory '/scratch/vdhamudaransathish/job_16878639/mapred_scratch'
+removed '/scratch/vdhamudaransathish/job_16878639/namenode_data/current/fsimage_0000000000000000000'
+removed '/scratch/vdhamudaransathish/job_16878639/namenode_data/current/VERSION'
+removed '/scratch/vdhamudaransathish/job_16878639/namenode_data/current/seen_txid'
+removed '/scratch/vdhamudaransathish/job_16878639/namenode_data/current/edits_inprogress_0000000000000000071'
+removed '/scratch/vdhamudaransathish/job_16878639/namenode_data/current/fsimage_0000000000000000000.md5'
+removed '/scratch/vdhamudaransathish/job_16878639/namenode_data/current/edits_0000000000000000001-0000000000000000070'
+removed directory '/scratch/vdhamudaransathish/job_16878639/namenode_data/current'
+removed directory '/scratch/vdhamudaransathish/job_16878639/namenode_data'
+removed directory '/scratch/vdhamudaransathish/job_16878639/pids'
